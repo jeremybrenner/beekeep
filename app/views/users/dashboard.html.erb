@@ -1,0 +1,25 @@
+This is the dashboard dawg
+
+<div class='row'>
+<h2>Available Swarms</h2>
+<% @swarms.each do |swarm| %>
+  <% unless swarm.assigned %>
+    <div class="panel">
+      <%= swarm.name %>
+      Swarm active?: <%= swarm.active_status %>
+       Assigned?: <%= swarm.assigned %>
+      <%= button_to "CLAIM", {controller: "swarms", action: "assign_swarm", id: swarm.id }, class: "button alert" %>
+    </div>
+  <% end %>
+<% end %> 
+<h2> My Swarms</h2>
+<% @userswarms.each do |swarm| %>
+  <div class="panel">
+    <%= swarm.name %>
+    Swarm active?: <%= swarm.active_status %>
+     Assigned?: <%= swarm.assigned %>
+  </div>
+<% end %> 
+</div>
+
+<%= button_to "Logout", {controller: "sessions", action: "destroy"}, class: "button alert" %>

@@ -1,0 +1,14 @@
+
+<%= form_for :user, url: signup_path, method: 'post' do |u| %>
+  <%= label_tag 'First Name' %>
+  <%= u.text_field :first_name %>
+  <%= label_tag 'Last Name' %>
+  <%= u.text_field :last_name %>
+  <%= label_tag 'User Name' %>
+  <%= u.text_field :username %>
+  <%= label_tag 'Email' %>
+  <%= u.text_field :email %>
+  <%= label_tag 'Password' %>
+  <%= u.password_field :password %>
+  <%= u.submit "Sign Up", :class => 'button' %>
+<% end %>

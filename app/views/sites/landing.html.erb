@@ -1,0 +1,12 @@
+<h1> WELCOME TO BEE TOWN! </h1>
+
+<div class= "row">
+  <a href="/login" class= "button" data-reveal-id="getStartedModal">Get Started</a>
+
+  <div id="getStartedModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+    <%= render 'sessions/new' %>
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  </div>
+</div>
+
+<%= link_to "I HAVE BEES", {controller: "swarms", action: "new"}, class: "button alert" %>

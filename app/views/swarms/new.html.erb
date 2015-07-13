@@ -1,0 +1,13 @@
+<%= form_for @swarm do |s| %>
+<%= label_tag 'Name' %>
+<%= s.text_field :name %>
+<%= label_tag 'Email' %>
+<%= s.text_field :email %>
+<%= label_tag 'Phone Number' %>
+<%= s.text_field :phone %>
+<%= label_tag 'Description' %>
+<%= s.text_area :description %>
+<%= label_tag 'Location' %>
+<%= s.text_field :location %>
+<%= s.submit "Sign Up", :class => 'button' %>
+<% end %>
