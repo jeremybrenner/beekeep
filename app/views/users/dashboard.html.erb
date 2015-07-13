@@ -13,6 +13,7 @@ This is the dashboard dawg
   <% end %>
 <% end %> 
 <h2> My Swarms</h2>
+<% if @userswarms %>
 <% @userswarms.each do |swarm| %>
   <div class="panel">
     <%= swarm.name %>
@@ -20,6 +21,9 @@ This is the dashboard dawg
      Assigned?: <%= swarm.assigned %>
   </div>
 <% end %> 
+<% else %>
+You have no swarms!
+<% end %>
 </div>
 
 <%= button_to "Logout", {controller: "sessions", action: "destroy"}, class: "button alert" %>
