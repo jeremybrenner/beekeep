@@ -19,9 +19,15 @@ class UsersController < ApplicationController
   def dashboard
     @swarms = Swarm.all
     if defined? current_user.swarms 
-    @userswarms = current_user.swarms
-  end
+      @userswarms = current_user.swarms
+    end
     @current_user = current_user
+    @hash = Gmaps4rails.build_markers(@swarms) do |swarm, marker|
+      marker.lat swarm.latitude
+      marker.lng swarm.longitude
+      marker.picture "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png"
+      marker.infowindow swarm.description
+    end
   end
 
   private

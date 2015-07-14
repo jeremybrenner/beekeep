@@ -2,6 +2,10 @@ class Swarm < ActiveRecord::Base
 
   belongs_to :user
 
+  geocoded_by :address
+
+  after_validation :geocode
+
     # a modular function to allow modification of how these numbers
     # are collected in the future
     # def gather_numbers

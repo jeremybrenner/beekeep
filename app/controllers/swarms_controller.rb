@@ -23,7 +23,7 @@ class SwarmsController < ApplicationController
   private
 
   def swarm_params
-    params.require(:swarm).permit(:name, :email, :phone, :description, :location, :user_id)
+    params.require(:swarm).permit(:name, :email, :phone, :description, :address, :user_id)
   end
 
 end
