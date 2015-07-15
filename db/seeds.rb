@@ -5,4 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Swarm.create(name: 'Buddy', email: 'Buddy@cats.com', phone: '9991234567', address: "Oakland")
+User.create(first_name: "admin", last_name: "adminlast", username: "admin", email: "admin@admin.com", address: "Oakland", password: "admin")
+Swarm.create(name: 'Buddy', email: 'Buddy@cats.com', phone: '9991234567', address: "Oakland", description: "beeeeeez")

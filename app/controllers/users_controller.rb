@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
 
+  before_action :require_login, except: [:new, :create]
+
   def index
   end
 
@@ -8,12 +10,17 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create!(user_params)
-    login(@user)
-    redirect_to "/dashboard"
+    @user = User.create(user_params)
+    if @user.save
+      login(@user)
+      redirect_to "/dashboard"
+    else
+      redirect_to signup_path, error: @user.errors.full_messages.to_sentence
+    end
   end
 
   def show
+    redirect_to "/dashboard"
   end
 
   def dashboard
@@ -33,7 +40,7 @@ class UsersController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:first_name, :last_name, :username, :email, :password, :phone, :location)
+      params.require(:user).permit(:first_name, :last_name, :username, :email, :password, :phone, :address)
     end
 
 end

@@ -19,7 +19,7 @@ module SessionsHelper
 
   def require_login
     if !logged_in?
-      redirect to "/login"
+      redirect_to "/"
     end 
   end
 

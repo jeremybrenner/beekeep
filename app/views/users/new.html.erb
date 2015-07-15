@@ -1,5 +1,11 @@
+<% if flash[:error] %>
+      <% if flash[:error].include?("can't be blank") %>
+      <div data-alert id= "flash" class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
+    <% end %>
+<% end %>
 
-<%= form_for :user, url: signup_path, method: 'post' do |u| %>
+
+<%= form_for :user, url: signup_path, method: 'post', :html => {'data-abide' => ' ' } do |u| %>
   <%= label_tag 'First Name' %>
   <%= u.text_field :first_name %>
   <%= label_tag 'Last Name' %>
@@ -7,7 +13,7 @@
   <%= label_tag 'User Name' %>
   <%= u.text_field :username %>
   <%= label_tag 'Location' %>
-  <%= u.text_field :location %>
+  <%= u.text_field :address %>
   <%= label_tag 'Phone number' %>
   <%= u.text_field :phone %>
   <%= label_tag 'Email' %>
@@ -16,3 +22,4 @@
   <%= u.password_field :password %>
   <%= u.submit "Sign Up", :class => 'button' %>
 <% end %>
+

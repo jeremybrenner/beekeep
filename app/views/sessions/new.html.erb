@@ -1,0 +1,12 @@
+  <% if flash[:loginerr] %>
+    <div id= "flash" class="notice"><%= flash[:loginerr] %></div>
+  <% end %>
+
+<%= form_for @user, url: login_path , method: "post" do |u| %>
+    <%= label_tag 'Username' %>
+    <%= u.text_field :username %>
+    <%= label_tag 'Password' %>
+    <%= u.password_field :password %>
+    <%= u.submit "Login", :class => 'button' %>
+<% end %>
+

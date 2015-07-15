@@ -1,3 +1,9 @@
+
+<% flash.each do |msg| %>
+  <li><%= msg %></li>
+<% end %>
+
+
 <%= form_for @swarm do |s| %>
 <%= label_tag 'Name' %>
 <%= s.text_field :name %>

@@ -15,9 +15,11 @@ post '/logout', to: 'sessions#destroy'
 
 
 # routes for swarms
-resources :swarms
+resources :swarms do
+  post 'assign_swarm', on: :member
+  post 'deactivate', on: :member
+  post 'reactivate', on: :member
+end
 
-# route to claim a post
-post '/claim', to: 'swarms#assign_swarm'
 
 end

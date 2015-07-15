@@ -6,6 +6,20 @@ class Swarm < ActiveRecord::Base
 
   after_validation :geocode
 
+  validates :name, 
+            :presence => true
+  validates :email, 
+            :presence => true,
+            :uniqueness => true
+  validates :phone, 
+            :presence => true,
+            :uniqueness => true
+  validates :description, 
+            :presence => true
+  validates :address, 
+            :presence => true
+
+
     # a modular function to allow modification of how these numbers
     # are collected in the future
     # def gather_numbers
@@ -17,7 +31,7 @@ class Swarm < ActiveRecord::Base
     # end
 
     # this actually constructs the SMS notifcation and sends it
-    def self.send_swarm_notice(params)
+  def self.send_swarm_notice(params)
 
 
         # this constructs an object that holds all the numbers
