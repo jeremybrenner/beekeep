@@ -9,15 +9,24 @@ class User < ActiveRecord::Base
   validates :last_name, 
             :presence => true
   validates :username,
-            :presence => true
+            :presence => true,
+            :uniqueness => true
   validates :address, 
             :presence => true
   validates :phone,
-            :presence => true 
+            :presence => true, 
+            :uniqueness => true,
+            :numericality => true
   validates :password,
-            :presence => true
+            :presence => true,
+            :confirmation => true,
+            :length => { :minimum => 8, :maximum => 15 }
+  validates :password_confirmation, 
+            :presence => true,
+            :length => { :minimum => 8, :maximum => 15 }
   validates :email,
-            :presence => true
+            :presence => true,
+            :uniqueness => true
 
 
 

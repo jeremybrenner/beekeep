@@ -1,7 +1,7 @@
 class SitesController < ApplicationController
 
   def landing
-    @user = User.new
+    @beefact = random_bee_fact
   end
   
 end

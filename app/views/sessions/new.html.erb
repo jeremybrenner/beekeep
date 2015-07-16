@@ -1,5 +1,5 @@
   <% if flash[:loginerr] %>
-    <div id= "flash" class="notice"><%= flash[:loginerr] %></div>
+    <div data-alert id= "flash" class="alert-box"><%= flash[:loginerr] %></div>
   <% end %>
 
 <%= form_for @user, url: login_path , method: "post" do |u| %>
@@ -9,4 +9,6 @@
     <%= u.password_field :password %>
     <%= u.submit "Login", :class => 'button' %>
 <% end %>
+
+<%= link_to "Home", "/" %>
 

@@ -11,7 +11,7 @@ class SwarmsController < ApplicationController
     if @swarm.save
       redirect_to root_path
     else
-      redirect_to new_swarm_path, error: @swarm.errors.messages 
+      redirect_to new_swarm_path, error: @swarm.errors.full_messages.to_sentence 
     end
   end
 

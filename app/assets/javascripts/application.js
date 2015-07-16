@@ -21,9 +21,7 @@
 $(function(){ 
   $(document).foundation(); 
   constructMap(hash);
-  fadeFlash();
 });
-
 
 
 

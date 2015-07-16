@@ -1,19 +1,34 @@
-
-<% flash.each do |msg| %>
-  <li><%= msg %></li>
+<% if flash[:error] %>
+      <% if flash[:error].include?("can't be blank") %>
+      <div data-alert id= "flash" class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
+    <% end %>
 <% end %>
 
 
-<%= form_for @swarm do |s| %>
-<%= label_tag 'Name' %>
-<%= s.text_field :name %>
-<%= label_tag 'Email' %>
-<%= s.text_field :email %>
-<%= label_tag 'Phone Number' %>
-<%= s.text_field :phone %>
-<%= label_tag 'Description' %>
-<%= s.text_area :description %>
-<%= label_tag 'Address' %>
-<%= s.text_field :address %>
-<%= s.submit "Report a swarm", :class => 'button' %>
-<% end %>
+
+<div class="row">
+  <div class="small-10 medium-8 large-8 small-centered columns">
+
+    <div class="header panel">
+      <div class="sign">
+    <!--     <h1>Logo here</h1> -->
+    </div>
+    <%= form_for @swarm, html: { autocomplete: 'off' } do |s| %>
+    <%= label_tag 'Name' %>
+    <%= s.text_field :name %>
+    <%= label_tag 'Email' %>
+    <%= s.text_field :email %>
+    <%= label_tag 'Phone Number' %>
+    <%= s.text_field :phone %>
+    <%= label_tag 'Address' %>
+    <%= s.text_field :address %>
+    <%= label_tag 'Description' %>
+    <%= s.text_area :description, rows: 10 %>
+    <div class= "text-center">
+    <%= s.submit "Report a swarm", :class => 'button radius success' %>
+    <p><%= link_to "Return Home", "/" %></p>
+    </div>
+    <% end %>
+    </div>
+  </div>
+</div>

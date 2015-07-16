@@ -1,11 +1,55 @@
-<% flash.each do |msg| %>
-  <li><%= msg %></li>
-<% end %>
+<div class="parallax-background">
+  <div class="intro-text">
+    beeKeep
+    <div class= "sub-text">
+    <p>they need our help.</p>
+    </div>
 
-<h1> WELCOME TO BEE TOWN! </h1>
+    <div class = "wrap">
+    <ul class="large-block-grid-3 small-block-grid-3 options">
+      <li class= "option one">
+        <p>Did you find a swarm and need help?</br> click below:
+        </p>
+        <p>
+        <%= link_to "I FOUND BEES!", {controller: "swarms", action: "new"}, class: "button small radius alert" %></p>
+      </li>
+      <li>
+        <%= image_tag("bee_or.svg") %>
+      </li>
+      <li class= "option two">
+        <p> Are you a beekeeper looking for bees?</br> Get started here:</p>
+        <p>
+          <%= link_to "Start", signup_path, class: "button small radius" %>
+          <%= link_to "Login", login_path, class: "button small radius" %>
+        </p>
+      </li>
+     </ul>
+    </div>
+  </div>
+</div>
+
+<div class="parallax-content">
+<div class="parallax-text">
+  <div class= "beefact">
+    <p>Did you know?</p>
+    <%=random_bee_fact %>
+  </div>
+  <br>
+  <p>Bacon ipsum dolor sit amet chicken pork loin hamburger ball tip, swine tenderloin salami meatball boudin tri-tip fatback shank bacon. Pork salami kevin, brisket spare ribs strip steak ham hock porchetta. Pork belly short loin tail porchetta. Pork pig meatball, beef ribs doner jerky tri-tip hamburger filet mignon strip steak ball tip ham tail tongue corned beef.</p>
+
+  <p>Flank spare ribs capicola, strip steak biltong pancetta bresaola tri-tip cow landjaeger. Short ribs sirloin beef ribs, flank capicola ribeye turducken. Sirloin boudin andouille tail. Ham flank tail sausage t-bone, jerky landjaeger kevin porchetta ground round pork belly.</p>
+
+  <p>Pork loin doner biltong shoulder meatball flank. Sirloin shankle ground round tail, short loin prosciutto beef ribs salami pork pancetta kielbasa. Brisket spare ribs jerky filet mignon flank. Turducken ham sausage pork loin salami. Ball tip meatloaf shank pancetta hamburger meatball. Jowl beef pork loin tenderloin turducken, pastrami capicola filet mignon ham hock pork belly t-bone jerky ball tip kevin.</p>
+
+  <p>Filet mignon shank pastrami pork loin ham jerky corned beef chuck drumstick ribeye prosciutto pork belly tail. Beef leberkas brisket ham hock tenderloin tail tri-tip pork chop. Corned beef boudin andouille tail fatback chicken strip steak biltong pancetta pork loin tri-tip landjaeger pastrami kevin. Tongue spare ribs kevin ribeye shoulder swine.</p>
+
+  <p>Chicken kielbasa swine ham hock filet mignon strip steak bacon fatback pork t-bone. Ground round shankle tongue, jowl flank spare ribs beef leberkas ham boudin shank capicola short ribs. Drumstick pork loin turkey pork chop salami andouille pork belly. Short loin tongue tri-tip, hamburger filet mignon pastrami doner shoulder turkey ball tip t-bone jerky ham chicken.</p>
+
+  <p>Ground round flank pork loin salami, cow biltong hamburger swine brisket tongue tenderloin drumstick meatball. Biltong tongue salami ham shankle, leberkas meatloaf sirloin ball tip. Pork loin pastrami spare ribs beef capicola sausage kevin filet mignon pork chop. Bacon jerky turkey shoulder cow capicola ball tip shank. Ham tongue tail tri-tip kielbasa ham hock frankfurter meatball cow brisket. Shankle sausage filet mignon biltong pork loin. Short ribs spare ribs chuck pig meatloaf shoulder cow tail brisket biltong ball tip ham hock.</p>
+
+</div>
+</div>
 
 
-<%= link_to "I HAVE BEES", {controller: "swarms", action: "new"}, class: "button alert" %>
 
-<%= link_to "SIGN UP", signup_path %>
-<%= link_to "Login", login_path %>
+

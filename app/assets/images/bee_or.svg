@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="164px" height="164px" viewBox="0 0 164 164" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <ellipse id="Oval-1" fill="#E3D26F" sketch:type="MSShapeGroup" cx="82.2733383" cy="81.7336655" rx="79.1296158" ry="79.1296158"></ellipse>
+        <path d="M53.4264086,100 L111.120268,100" id="Path-5" stroke="#383838" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <path d="M58.919034,104 L105.627643,104" id="Path-5-Copy" stroke="#383838" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <text id="OR" sketch:type="MSTextLayer" font-family="Raleway" font-size="48" font-weight="normal" fill="#383838">
+            <tspan x="47.567248" y="94.4536655">OR</tspan>
+        </text>
+    </g>
+</svg>

@@ -50,6 +50,9 @@ gem 'geocoder'
 # Wrapper for google maps api
 gem 'gmaps4rails'
 
+# ZURB icons
+gem 'foundation-icons-sass-rails'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

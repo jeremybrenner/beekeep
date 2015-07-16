@@ -1,7 +1,21 @@
+
+<!-- a catch all template for :error flashes, partial this -->
 <% if flash[:error] %>
       <% if flash[:error].include?("can't be blank") %>
-      <div data-alert id= "flash" class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
-    <% end %>
+      <div data-alert class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
+      <% end %>
+      <% if flash[:error].include?("has already been taken") %>
+      <div data-alert class="alert-box"><%=  "Your email, phone, or username already exists!" %></div>
+      <% end %>
+      <% if flash[:error].include?("confirmation doesn't match") %>
+      <div data-alert class="alert-box"><%=  "Your passwords do not match!" %></div>
+      <% end %>
+      <% if flash[:error].include?("too") %>
+      <div data-alert class="alert-box"><%=  "Please check the length of your password" %></div>
+      <% end %>
+       <% if flash[:error].include?("number") %>
+      <div data-alert class="alert-box"><%=  "Please enter a valid phone number!" %></div>
+      <% end %>
 <% end %>
 
 
@@ -20,6 +34,12 @@
   <%= u.text_field :email %>
   <%= label_tag 'Password' %>
   <%= u.password_field :password %>
+  <%= label_tag 'Password confirmation' %>
+  <%= u.password_field :password_confirmation %>
   <%= u.submit "Sign Up", :class => 'button' %>
 <% end %>
+
+<%= link_to "Home", "/" %>
+
+<% console %>
 

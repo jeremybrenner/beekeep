@@ -9,11 +9,9 @@ class Swarm < ActiveRecord::Base
   validates :name, 
             :presence => true
   validates :email, 
-            :presence => true,
-            :uniqueness => true
-  validates :phone, 
-            :presence => true,
-            :uniqueness => true
+            :presence => true
+  validates :phone,
+            :numericality => true
   validates :description, 
             :presence => true
   validates :address, 

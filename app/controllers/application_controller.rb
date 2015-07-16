@@ -8,5 +8,7 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
 
   include SwarmsHelper
+
+  include SitesHelper
   
 end

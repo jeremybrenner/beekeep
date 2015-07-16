@@ -1,3 +1,49 @@
 // Place all the styles related to the swarms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  background: #3A3833; 
+}
+
+.header.panel {
+  margin: 3rem auto;
+  background: #E5C537; 
+  margin-top: 10em;
+}
+
+.header.panel p {
+    font: 1rem "Avenir Next";
+    padding: 1rem 2rem 2rem 2rem;
+    margin-top: -1rem; 
+  }
+
+.header.panel p span {
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 75%;
+      font-weight: bold; 
+  }
+
+.header.panel .sign {
+    background: #DBB323;
+    width: 13em;
+    height: 13em;
+    position: relative;
+    top: -8rem;
+    border-radius: 1000px;
+    margin: auto; 
+  }
+
+// .header.panel .sign h1 {
+//       text-transform: uppercase;
+//       font: bolder 0.875rem;
+//       letter-spacing: 3px;
+//       color: #666;
+//       font-size: 70%;
+//       text-align: center;
+//       line-height: 2rem; 
+//     }
+
+.button {
+  text-align: center;
+  }
