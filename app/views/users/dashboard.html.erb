@@ -1,7 +1,7 @@
 <nav class="top-bar" data-topbar role="navigation">
   <ul class="title-area">
     <li class="name">
-      <div class="brand"><%= image_tag("bee_brand.svg") %></div>
+      <div class="brand left"><a href="/"><%= image_tag("bee_brand.svg") %></a></div>
     </li>
      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
@@ -120,8 +120,4 @@
     </div>
 </div>
 
-
-<div class= "row text-center">
-<%= button_to "Logout", {controller: "sessions", action: "destroy"}, class: "button small alert" %>
-</end>
 

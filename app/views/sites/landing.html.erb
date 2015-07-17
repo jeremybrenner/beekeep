@@ -16,7 +16,7 @@ We're on a mission to save the bees, and we need your help! Scroll down to learn
     <div class = "wrap">
     <ul class="large-block-grid-3 small-block-grid-3 options">
       <li class= "option one">
-        <p>Did you find a swarm and need help?</br> click below:
+        <p class= "optiontxt">Did you find a swarm and need help?</br> click below:
         </p>
         <p>
         <%= link_to "I FOUND BEES!", {controller: "swarms", action: "new"}, class: "button small radius alert" %></p>
@@ -25,7 +25,7 @@ We're on a mission to save the bees, and we need your help! Scroll down to learn
         <%= image_tag("bee_or.svg") %>
       </li>
       <li class= "option two">
-        <p> Are you a beekeeper looking for bees?</br> Get started here:</p>
+        <p class= "optiontxt"> Are you a beekeeper looking for bees?</br> Get started here:</p>
         <p>
           <%= link_to "START", signup_path, class: "button small radius" %>
           <%= link_to "LOGIN", login_path, class: "button small radius" %>
@@ -38,24 +38,36 @@ We're on a mission to save the bees, and we need your help! Scroll down to learn
 
 <div class="parallax-content">
 <div class="parallax-text">
-  <div class= "beefact">
-    <p>Did you know?</p>
-    <%=random_bee_fact %>
-  </div>
   <br>
-  <p>Bacon ipsum dolor sit amet chicken pork loin hamburger ball tip, swine tenderloin salami meatball boudin tri-tip fatback shank bacon. Pork salami kevin, brisket spare ribs strip steak ham hock porchetta. Pork belly short loin tail porchetta. Pork pig meatball, beef ribs doner jerky tri-tip hamburger filet mignon strip steak ball tip ham tail tongue corned beef.</p>
+  <span class="jump-in"> Colony collapse disorder</span>
+  <p>
+     or CCD is one of the biggest ecological disasters our planet is facing. Since 2006, countries around the world have reported a loss of approximately 45-50% in honey bee populations. Last year, beekeepers in the U.S. lost 50% of their colonies, on average. When one considers the amount of crops that are almost entirely dependent on pollinators, the scope of the problem becomes clear. Without honey bees, almonds wouldnt exist!
+  </p>
+   <div class= "beefact large-grid-12 large-center">
+    <div class= "factwrap text-center">
+    <h3>Did you know?</h3>
+    <p><%=random_bee_fact %><p>
+    </div>
+  </div>
 
-  <p>Flank spare ribs capicola, strip steak biltong pancetta bresaola tri-tip cow landjaeger. Short ribs sirloin beef ribs, flank capicola ribeye turducken. Sirloin boudin andouille tail. Ham flank tail sausage t-bone, jerky landjaeger kevin porchetta ground round pork belly.</p>
+  <div class= "beeimg small-grid-12 small-centered">
+    <div class= "imgwrap">
+  <%=image_tag('bees_5.jpg')%>
+    </div>
+  </div>
 
-  <p>Pork loin doner biltong shoulder meatball flank. Sirloin shankle ground round tail, short loin prosciutto beef ribs salami pork pancetta kielbasa. Brisket spare ribs jerky filet mignon flank. Turducken ham sausage pork loin salami. Ball tip meatloaf shank pancetta hamburger meatball. Jowl beef pork loin tenderloin turducken, pastrami capicola filet mignon ham hock pork belly t-bone jerky ball tip kevin.</p>
+  <span class="jump-in"> What is swarming?</span>
+  <p>
+     Swarming is a natural survival habit of the bee. It typically occurs during the spring, when a colony has reached a large enough size that it decides to split its population and find a new hive. Although alarming to the onlooker- during this process (and in general) the bees are very docile and easy to handle. Since humans began domesticating bees, this behavior has been used as a critical resource for replenishing beekeeper's colonies. As the bee population plummets, it is now critical for beekeepers to be able to react quickly and capture swarms for preservation.
+  </p>
 
-  <p>Filet mignon shank pastrami pork loin ham jerky corned beef chuck drumstick ribeye prosciutto pork belly tail. Beef leberkas brisket ham hock tenderloin tail tri-tip pork chop. Corned beef boudin andouille tail fatback chicken strip steak biltong pancetta pork loin tri-tip landjaeger pastrami kevin. Tongue spare ribs kevin ribeye shoulder swine.</p>
+  <p>I was once called the worst audience participant Cirque du Soleil ever had. You want your belt to buckle, not your chair. However, she mistook the drowsy eye alcohol warning for a winking eye alcohol suggestion. Gosh Mom… after all these years, God's not going to take a call from you. I'm not a prostitute. Then I shall let you live!. It looks like you've been looking for dragons… in the future. A trick is something a whore does for money…or candy. … or cocaine. Her lawyers are claiming the seal is worth $250,000. And that's not even including Buster's Swatch. Absolutely. And we're going to be here every day. I don't care if it takes from now till the end of Shrimpfest. And guess what else is back. [slow wink] My breakfast? My friskiness. Mama horny Michael. No, Pop-pop does not get a treat. I just bought you a f**king pizza.</p>
 
-  <p>Chicken kielbasa swine ham hock filet mignon strip steak bacon fatback pork t-bone. Ground round shankle tongue, jowl flank spare ribs beef leberkas ham boudin shank capicola short ribs. Drumstick pork loin turkey pork chop salami andouille pork belly. Short loin tongue tri-tip, hamburger filet mignon pastrami doner shoulder turkey ball tip t-bone jerky ham chicken.</p>
+  <p>Her lawyers are claiming the seal is worth $250,000. And that's not even including Buster's Swatch. Turn this skiff around! Fun and failure both start out the same way. No, no, it's pronounced a-nal-ra-pist. She's always got to wedge herself in the middle of us so that she can control everything. Yeah. Mom's awesome. What do you expect, Mother? I'm half machine! I'm a monster!! I know what an erection feels like, Michael. No, it's the opposite. It's like my heart is getting hard. What's gotten into you? Have you been eating cheese?</p>
 
-  <p>Ground round flank pork loin salami, cow biltong hamburger swine brisket tongue tenderloin drumstick meatball. Biltong tongue salami ham shankle, leberkas meatloaf sirloin ball tip. Pork loin pastrami spare ribs beef capicola sausage kevin filet mignon pork chop. Bacon jerky turkey shoulder cow capicola ball tip shank. Ham tongue tail tri-tip kielbasa ham hock frankfurter meatball cow brisket. Shankle sausage filet mignon biltong pork loin. Short ribs spare ribs chuck pig meatloaf shoulder cow tail brisket biltong ball tip ham hock.</p>
+  <p>Bob Loblaw Lobs Law Bomb. I will be a bigger and hairier mole than the one on your inner left thigh! No, I was ashamed to be SEEN with you. I like being WITH you. I just dont want him to point out my cracker ass in front of Ann. A trick is something a whore does for money… or cocaine. I've been in the film business for a while but I just can't seem to get one in the can.</p>
 
-</div>
+  </div>
 </div>
 
 

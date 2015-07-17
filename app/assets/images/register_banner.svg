@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="413px" height="76px" viewBox="0 0 413 76" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M16.9994276,50.8671765 L0,26 L71.9642436,26 L71.9642436,75.7343531 L0,75.7343531 L16.9994276,50.8671765 Z" id="Rectangle-4-Copy-9" fill="#E5C537" sketch:type="MSShapeGroup"></path>
+        <path d="M395.964816,49.8671765 L412.964244,25 L341,25 L341,74.7343531 L412.964244,74.7343531 L395.964816,49.8671765 Z" id="Rectangle-4-Copy-8" fill="#E5C537" sketch:type="MSShapeGroup"></path>
+        <path d="M72.1465819,25 L72.1465819,75.286957 L43,50.1434785 L72.1465819,25 Z" id="Triangle-1-Copy-8" fill="#DBB323" sketch:type="MSShapeGroup"></path>
+        <path d="M341,25 L341,75.286957 L370.146582,50.1434785 L341,25 Z" id="Triangle-1-Copy-9" fill="#DBB323" sketch:type="MSShapeGroup"></path>
+        <rect id="Rectangle-3-Copy-4" fill="#E3D26F" sketch:type="MSShapeGroup" x="43" y="0" width="328.088953" height="49.7343531"></rect>
+        <text id="Lets-Get-Started!" sketch:type="MSTextLayer" font-family="Raleway" font-size="24" font-weight="420" sketch:alignment="middle" fill="#383838">
+            <tspan x="112.436477" y="32.372">Lets Get Started!</tspan>
+        </text>
+    </g>
+</svg>
