@@ -8,31 +8,13 @@ body {
 .header.panel {
   margin: 3rem auto;
   background: #E5C537; 
-  margin-top: 10em;
+  margin-top: 3em;
 }
 
-.header.panel p {
-    font: 1rem "Avenir Next";
-    padding: 1rem 2rem 2rem 2rem;
-    margin-top: -1rem; 
-  }
+.swarm-head {
+  margin-top: 3em;
+}
 
-.header.panel p span {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      font-size: 75%;
-      font-weight: bold; 
-  }
-
-.header.panel .sign {
-    background: #DBB323;
-    width: 13em;
-    height: 13em;
-    position: relative;
-    top: -8rem;
-    border-radius: 1000px;
-    margin: auto; 
-  }
 
 // .header.panel .sign h1 {
 //       text-transform: uppercase;

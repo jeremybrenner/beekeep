@@ -20,10 +20,10 @@ class User < ActiveRecord::Base
   validates :password,
             :presence => true,
             :confirmation => true,
-            :length => { :minimum => 8, :maximum => 15 }
+            :length => { :minimum => 6, :maximum => 15 }
   validates :password_confirmation, 
             :presence => true,
-            :length => { :minimum => 8, :maximum => 15 }
+            :length => { :minimum => 6, :maximum => 15 }
   validates :email,
             :presence => true,
             :uniqueness => true

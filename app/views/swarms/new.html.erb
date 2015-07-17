@@ -2,30 +2,42 @@
       <% if flash[:error].include?("can't be blank") %>
       <div data-alert id= "flash" class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
     <% end %>
+    <% if flash[:error].include?("invalid address") %>
+      <div data-alert id= "flash" class="alert-box"><%=  "Please enter a valid address" %></div>
+    <% end %>
+    <% if flash[:error].include?("number") %>
+      <div data-alert class="alert-box"><%=  "Please enter a valid phone number!" %></div>
+    <% end %>
 <% end %>
 
+<div class= "row">
+
+  <div class="swarm-head small-10 medium-8 large-8 small-centered columns">
+    <%= image_tag("swarm_form_head.svg") %>
+  </div>
+
+</div>
 
 
 <div class="row">
   <div class="small-10 medium-8 large-8 small-centered columns">
-
     <div class="header panel">
-      <div class="sign">
-    <!--     <h1>Logo here</h1> -->
-    </div>
     <%= form_for @swarm, html: { autocomplete: 'off' } do |s| %>
+    <div class="small-10 medium-10 large-10 small-centered columns text-center">
+    <p>Use the form below to tell us about the swarm you found. Please note your information will only be used by a beekeeper for following up with you.</p>
+    </div>
     <%= label_tag 'Name' %>
     <%= s.text_field :name %>
     <%= label_tag 'Email' %>
     <%= s.text_field :email %>
-    <%= label_tag 'Phone Number' %>
+    <%= label_tag 'Phone Number (optional)' %>
     <%= s.text_field :phone %>
-    <%= label_tag 'Address' %>
+    <%= label_tag 'Nearest Address' %>
     <%= s.text_field :address %>
     <%= label_tag 'Description' %>
     <%= s.text_area :description, rows: 10 %>
     <div class= "text-center">
-    <%= s.submit "Report a swarm", :class => 'button radius success' %>
+    <%= s.submit "Report a swarm", :class => 'button radius' %>
     <p><%= link_to "Return Home", "/" %></p>
     </div>
     <% end %>

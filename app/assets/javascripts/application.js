@@ -20,8 +20,9 @@
 
 $(function(){ 
   $(document).foundation(); 
-  constructMap(hash);
 });
+
+
 
 
 

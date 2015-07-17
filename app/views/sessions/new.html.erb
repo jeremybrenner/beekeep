@@ -2,13 +2,32 @@
     <div data-alert id= "flash" class="alert-box"><%= flash[:loginerr] %></div>
   <% end %>
 
-<%= form_for @user, url: login_path , method: "post" do |u| %>
+<div class= "row">
+  <div class="swarm-head text-center small-10 medium-8 large-8 small-centered columns">
+    <%= image_tag("login_banner.svg") %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="small-10 medium-8 large-8 small-centered columns">
+
+    <div class="header panel">
+<!--     <div class="sign">
+    </div> -->
+    <h4 class= "text-center">
+    login with your username and password below:
+    </h4>
+    <br>
+    <%= form_for @user, url: login_path, html: { autocomplete: 'off' }, method: "post" do |u| %>
     <%= label_tag 'Username' %>
     <%= u.text_field :username %>
     <%= label_tag 'Password' %>
     <%= u.password_field :password %>
+    <div class= "text-center">
     <%= u.submit "Login", :class => 'button' %>
-<% end %>
-
-<%= link_to "Home", "/" %>
-
+    <p><%= link_to "Return Home", "/" %></p>
+    </div>
+    <% end %>
+    </div>
+  </div>
+</div>

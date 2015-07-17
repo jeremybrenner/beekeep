@@ -823,7 +823,7 @@ $input-box-shadow: inset 0 0px 0px rgba(0,0,0,0.1);
 // We use these to style the label text
 // $label-font-sizing: rem-calc(11);
 // $label-font-weight: $font-weight-normal;
-// $label-font-color: $oil;
+$label-font-color: $bee-grey;
 // $label-font-color-alt: $white;
 // $label-font-family: $body-font-family;
 
@@ -1492,3 +1492,4 @@ $panel-border-size: 0px;
 // $include-legacy-visibility-classes: true;
 
 @import 'foundation';
+@import 'dashboard.scss';

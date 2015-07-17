@@ -1,10 +1,16 @@
 <div class="parallax-background">
+<% if flash[:notice] %>
+    <div class="alert-box"><%= flash[:notice] %></div>
+<% end %>
   <div class="intro-text">
-    beeKeep
     <div class= "sub-text">
-    <p>they need our help.</p>
+    <%= image_tag("beekeep_logo.svg") %>
     </div>
-
+    <div class="row">
+    <div class= "desc large-7 large-centered columns">
+We're on a mission to save the bees, and we need your help! Scroll down to learn more.
+    </div>
+    </div>
     <div class = "wrap">
     <ul class="large-block-grid-3 small-block-grid-3 options">
       <li class= "option one">
@@ -19,8 +25,8 @@
       <li class= "option two">
         <p> Are you a beekeeper looking for bees?</br> Get started here:</p>
         <p>
-          <%= link_to "Start", signup_path, class: "button small radius" %>
-          <%= link_to "Login", login_path, class: "button small radius" %>
+          <%= link_to "START", signup_path, class: "button small radius" %>
+          <%= link_to "LOGIN", login_path, class: "button small radius" %>
         </p>
       </li>
      </ul>

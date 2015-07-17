@@ -4,8 +4,6 @@ class Swarm < ActiveRecord::Base
 
   geocoded_by :address
 
-  after_validation :geocode
-
   validates :name, 
             :presence => true
   validates :email, 
@@ -17,18 +15,23 @@ class Swarm < ActiveRecord::Base
   validates :address, 
             :presence => true
 
+ before_validation :geocode
+ after_validation :coord_set?
 
-    # a modular function to allow modification of how these numbers
-    # are collected in the future
-    # def gather_numbers
-    #   @numbers = []
-    #   users = User.all
-    #   users.each do |user|
-    #     @numbers.push(user.phone)
-    #   end
-    # end
+  def coord_set?
+    if (self.address_changed?)
+      if !(self.latitude_changed?)
+        self.errors.add(:address, "invalid address")
+        return false
+        binding.pry
+      end
+    end
+    puts "*********************** SUCCESS!!!*************/n*************************"
+    return true
+  end
+  
 
-    # this actually constructs the SMS notifcation and sends it
+
   def self.send_swarm_notice(params)
 
 

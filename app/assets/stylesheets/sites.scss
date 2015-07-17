@@ -32,7 +32,7 @@ body {
 .parallax-content {
   max-width: 100%;
   position: relative;
-  top: 32em;
+  top: 37em;
   padding: 50px;
   font-size: 20px;
   background-color: #DBB323;
@@ -64,12 +64,16 @@ body {
   background-color: #E5C537;
   height: 11em;
   transform: skew(0deg, 4deg);
-  margin-top: 3em;
+  margin-top: 1.5em;
 }
 
 .options {
   padding-top: 1.5em;
   transform: skew(0deg, -4deg);
+}
+
+.desc {
+  font-size: 20px;
 }
 
 

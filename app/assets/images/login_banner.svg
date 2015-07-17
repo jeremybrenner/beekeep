@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="414px" height="223px" viewBox="0 0 414 223" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <circle id="Oval-11" fill="#E5C537" sketch:type="MSShapeGroup" cx="205.5" cy="124.5" r="84.5"></circle>
+        <circle id="Oval-11-Copy-3" fill="#E5C537" sketch:type="MSShapeGroup" cx="206" cy="158" r="64"></circle>
+        <circle id="Oval-11-Copy-2" fill="#E5C537" sketch:type="MSShapeGroup" cx="207.241468" cy="42.5" r="42"></circle>
+        <ellipse id="Oval-15" fill="#9B9B9B" sketch:type="MSShapeGroup" transform="translate(112.500000, 78.000000) rotate(-45.000000) translate(-112.500000, -78.000000) " cx="112.5" cy="78" rx="4.5" ry="7"></ellipse>
+        <ellipse id="Oval-16-Copy" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(116.554523, 74.041671) rotate(-45.000000) translate(-116.554523, -74.041671) " cx="116.554523" cy="74.0416712" rx="4" ry="3.0121359"></ellipse>
+        <ellipse id="Oval-16-Copy-2" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(108.541671, 82.000000) rotate(-45.000000) translate(-108.541671, -82.000000) " cx="108.541671" cy="82" rx="4" ry="3.0121359"></ellipse>
+        <path d="M104.064838,69.868272 C104.064838,69.868272 77.2616365,5.20593097 157.999998,25" id="Path-18" stroke="#9B9B9B" stroke-width="3" stroke-dasharray="5" sketch:type="MSShapeGroup"></path>
+        <path d="M281.361997,95.4228915 C281.361997,95.4228915 261.798222,82.1379851 256.711345,70.5657479 C251.273263,58.194548 257.397786,46.6492371 277.853294,46.5388567 C284.513946,46.502915 286.17893,47.1565924 297.806241,50.0071804" id="Path-18-Copy" stroke="#9B9B9B" stroke-width="3" stroke-dasharray="5" sketch:type="MSShapeGroup" transform="translate(276.316966, 70.980184) rotate(133.000000) translate(-276.316966, -70.980184) "></path>
+        <path d="M206,147 C241.346224,147 270,118.346224 270,83 C270,47.653776 241.346224,19 206,19 C170.653776,19 142,47.653776 142,83 C142,118.346224 170.653776,147 206,147 Z" id="Oval-11-Copy" fill="#E5C537" sketch:type="MSShapeGroup"></path>
+        <path d="M224.126221,118 C233.584771,118 241.252441,109.49341 241.252441,99 C241.252441,88.5065898 233.584771,80 224.126221,80 L216.91518,80 C216.91518,80 207,92.1403626 207,99 C207,106.697289 216.91518,118 216.91518,118 C216.91518,118 221.605853,118 224.126221,118 Z" id="Oval-18-Copy-2" fill="#8D7315" sketch:type="MSShapeGroup"></path>
+        <circle id="Oval-18-Copy" fill="#000000" sketch:type="MSShapeGroup" cx="219" cy="99" r="19"></circle>
+        <ellipse id="Oval-15-Copy" fill="#9B9B9B" sketch:type="MSShapeGroup" transform="translate(261.500000, 107.000000) rotate(-120.000000) translate(-261.500000, -107.000000) " cx="261.5" cy="107" rx="4.5" ry="7"></ellipse>
+        <ellipse id="Oval-16-Copy-3" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(257.796408, 101.837229) rotate(-300.000000) translate(-257.796408, -101.837229) " cx="257.796408" cy="101.837229" rx="4" ry="3.0121359"></ellipse>
+        <ellipse id="Oval-16-Copy-4" fill="#D8D8D8" sketch:type="MSShapeGroup" transform="translate(264.203592, 112.029830) rotate(-300.000000) translate(-264.203592, -112.029830) " cx="264.203592" cy="112.02983" rx="4" ry="3.0121359"></ellipse>
+        <path d="M133,82 C128.301852,89.7614947 125.635619,97.77122 123,108 C118.167819,126.753588 124,145 124,145 C124,145 126.368498,153.440358 128,157 C130.035164,161.440358 135,170 135,170 C135,170 127.321943,137.555961 133,109 C137.036337,88.7005483 155,73 155,73 C155,73 157.871201,59.0620279 163,53 C167.910849,47.1955811 170,44 178,40 C178,40 177.170301,32.7140641 183,23 C186.773099,16.7128629 191.676251,10.4299977 206.999998,1 C206.999998,1 174,2 167,32 C167,32 159.585563,37.7293357 153,47 C148.889708,52.7861611 144.768576,60.851388 144,67 C143.956377,67.348982 137.417268,74.7025302 133,82 Z" id="Path-21" stroke="#DBB323" fill="#DBB323" sketch:type="MSShapeGroup"></path>
+        <path d="M17.7587742,197.867177 L0.759346547,173 L72.7235902,173 L72.7235902,222.734353 L0.759346547,222.734353 L17.7587742,197.867177 Z" id="Rectangle-4-Copy-7" fill="#E5C537" sketch:type="MSShapeGroup"></path>
+        <path d="M396.724163,196.867177 L413.72359,172 L341.759347,172 L341.759347,221.734353 L413.72359,221.734353 L396.724163,196.867177 Z" id="Rectangle-4-Copy-6" fill="#E5C537" sketch:type="MSShapeGroup"></path>
+        <path d="M72.9059284,172 L72.9059284,222.286957 L43.7593465,197.143478 L72.9059284,172 Z" id="Triangle-1-Copy-6" fill="#DBB323" sketch:type="MSShapeGroup"></path>
+        <path d="M341.759347,172 L341.759347,222.286957 L370.905928,197.143478 L341.759347,172 Z" id="Triangle-1-Copy-7" fill="#DBB323" sketch:type="MSShapeGroup"></path>
+        <rect id="Rectangle-3-Copy-3" fill="#E3D26F" sketch:type="MSShapeGroup" x="43.7593465" y="147" width="328.088953" height="49.7343531"></rect>
+        <text id="Welcome-Back!" sketch:type="MSTextLayer" font-family="Raleway" font-size="24" font-weight="420" fill="#383838">
+            <tspan x="118.759347" y="179">Welcome Back!</tspan>
+        </text>
+    </g>
+</svg>

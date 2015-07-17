@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="730px" height="135px" viewBox="0 0 730 135" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <path d="M31,90 L1,45 L128,45 L128,135 L1,135 L31,90 Z" id="Rectangle-4-Copy-2" fill="#E5C537" sketch:type="MSShapeGroup"></path>
+        <path d="M632,90 L602,45 L729,45 L729,135 L602,135 L632,90 Z" id="Rectangle-4-Copy-3" fill="#E5C537" sketch:type="MSShapeGroup" transform="translate(665.500000, 90.000000) scale(-1, 1) translate(-665.500000, -90.000000) "></path>
+        <path d="M127.436876,44 L127.436876,135 L76,89.5 L127.436876,44 Z" id="Triangle-1-Copy-2" fill="#DBB323" sketch:type="MSShapeGroup"></path>
+        <path d="M653.436876,44 L653.436876,135 L602,89.5 L653.436876,44 Z" id="Triangle-1-Copy-3" fill="#DBB323" sketch:type="MSShapeGroup" transform="translate(627.718438, 89.500000) scale(-1, 1) translate(-627.718438, -89.500000) "></path>
+        <path d="M237,66.5 L497.49332,66.5" id="Path-3-Copy-2" stroke="#383838" stroke-width="3" sketch:type="MSShapeGroup"></path>
+        <path d="M254,72.5 L478.93437,72.5" id="Path-3-Copy-3" stroke="#383838" stroke-width="3" sketch:type="MSShapeGroup"></path>
+        <rect id="Rectangle-3-Copy" fill="#E3D26F" sketch:type="MSShapeGroup" x="76" y="0" width="579" height="90"></rect>
+        <text id="TRACKER" sketch:type="MSTextLayer" font-family="Raleway" font-size="48" font-weight="420" fill="#383838">
+            <tspan x="254" y="57">TRACKER</tspan>
+        </text>
+        <path d="M269,68.3383656 L461.510208,68.3383656" id="Path-5-Copy-3" stroke="#383838" stroke-width="2" sketch:type="MSShapeGroup"></path>
+        <path d="M261,63.8888888 L466.080963,63.8888888" id="Path-5-Copy-4" stroke="#383838" stroke-width="2" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

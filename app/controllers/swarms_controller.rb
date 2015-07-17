@@ -9,6 +9,7 @@ class SwarmsController < ApplicationController
   def create
     @swarm = Swarm.create(swarm_params)
     if @swarm.save
+      flash[:notice] = "You successfully reported a swarm, thank you!"
       redirect_to root_path
     else
       redirect_to new_swarm_path, error: @swarm.errors.full_messages.to_sentence 
