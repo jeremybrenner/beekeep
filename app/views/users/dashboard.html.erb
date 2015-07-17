@@ -1,5 +1,31 @@
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <div class="brand"><%= image_tag("bee_brand.svg") %></div>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="has-dropdown">
+        <a href="#"><%= current_user.first_name %> <%= current_user.last_name %></a>
+        <ul class="dropdown">
+          <li><a href="/swarms/new">Post a Swarm</a></li>
+          <li ><a href="/logout">Logout</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+
 <% if flash[:notice] %>
+  <div class="small-6 columns small-centered text-center">
     <div class="alert-box"><%= flash[:notice] %></div>
+  </div>  
 <% end %>
 
 <head>
@@ -10,6 +36,21 @@
 </script>
 </head>
 
+<div class="row">
+  <div class="small-3 small-centered columns">
+    <div class= "single-bee">
+        <%= image_tag("single_bee.svg") %>
+    </div>
+  </div>
+  <ul class="head-banner small-block-grid-3 medium-block-grid-3 large-block-grid-3 text-center">
+    <li> <%= image_tag("comb1.svg") %></li>
+    <li class= "panel main-dash-head radius">
+    <h2 class= "mod">Hello <%= current_user.first_name %>!</h2>
+    <p class= "mod-2">Welcome to the user dashboard, here you can find new swarms- and manage the ones youve already claimed. You can also view them on the swarm map.<p>
+    </li>
+    <li><%= image_tag("comb2.svg") %></li>
+  </ul>
+</div>
 
 <div class "row">
 <div class= "swarm-banner large-10 large-centered text-center columns">
@@ -19,7 +60,9 @@
 
 <div class="row">
 <div class="large-6 columns large-uncentered medium-9 medium-centered dash">
-<span>Swarms available<span>
+<div class="dash-title text-center large-10 large-centered columns">
+<h2>Available Swarms</h2>
+</div>
 <% @swarms.each do |swarm| %>
   <% unless swarm.assigned %>
       <div class= "panel post radius">
@@ -38,7 +81,9 @@
 </div>
 
 <div class="large-6 columns large-uncentered medium-9 medium-centered dash">
-<span>Your current swarms</span>
+<div class="dash-title text-center large-10 large-centered columns">
+<h2>Your current swarms</h2>
+</div>
 <% if @userswarms %>
 <% @userswarms.each do |userswarm| %>
   <!-- instead of this, maybe create an archive object -->

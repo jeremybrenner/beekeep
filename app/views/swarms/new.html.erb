@@ -1,12 +1,18 @@
 <% if flash[:error] %>
       <% if flash[:error].include?("can't be blank") %>
+      <div class="small-6 columns small-centered">
       <div data-alert id= "flash" class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
+      </div>
     <% end %>
     <% if flash[:error].include?("invalid address") %>
+      <div class="small-6 columns small-centered">
       <div data-alert id= "flash" class="alert-box"><%=  "Please enter a valid address" %></div>
+      </div>
     <% end %>
     <% if flash[:error].include?("number") %>
+      <div class="small-6 columns small-centered">
       <div data-alert class="alert-box"><%=  "Please enter a valid phone number!" %></div>
+      </div>
     <% end %>
 <% end %>
 

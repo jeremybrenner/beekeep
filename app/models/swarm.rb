@@ -23,10 +23,10 @@ class Swarm < ActiveRecord::Base
       if !(self.latitude_changed?)
         self.errors.add(:address, "invalid address")
         return false
-        binding.pry
+        # binding.pry
       end
     end
-    puts "*********************** SUCCESS!!!*************/n*************************"
+    puts "********************* GEOCODE SUCCESS!!!**********************"
     return true
   end
   
@@ -55,7 +55,7 @@ class Swarm < ActiveRecord::Base
         @twilio_client.messages.create(
               :from => twilio_phone_number,
               :to => number_to_send_to,
-              :body => "#{params}"
+              :body => "A swarm has been reported at the following location: #{params.values.last} - Login to your dashboard to claim it!"
           )
     end
   end

@@ -2,19 +2,29 @@
 <!-- a catch all template for :error flashes, partial this -->
 <% if flash[:error] %>
       <% if flash[:error].include?("can't be blank") %>
+      <div class="small-6 columns small-centered">
       <div data-alert class="alert-box"><%=  "Please check and fill in any blank fields!" %></div>
+      </div>
       <% end %>
       <% if flash[:error].include?("has already been taken") %>
+      <div class="small-6 columns small-centered">
       <div data-alert class="alert-box"><%=  "Your email, phone, or username already exists!" %></div>
+      </div>
       <% end %>
       <% if flash[:error].include?("confirmation doesn't match") %>
+      <div class="small-6 columns small-centered">
       <div data-alert class="alert-box"><%=  "Your passwords do not match!" %></div>
+      </div>
       <% end %>
       <% if flash[:error].include?("too") %>
+      <div class="small-6 columns small-centered">
       <div data-alert class="alert-box"><%=  "Please check the length of your password" %></div>
+      </div>
       <% end %>
        <% if flash[:error].include?("number") %>
+       <div class="small-6 columns small-centered">
       <div data-alert class="alert-box"><%=  "Please enter a valid phone number!" %></div>
+      </div>
       <% end %>
 <% end %>
 

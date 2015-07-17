@@ -24,16 +24,17 @@ class UsersController < ApplicationController
   end
 
   def dashboard
-    @swarms = Swarm.all
+    # returns active swarms to the marker building hash
+    @swarms = Swarm.where(:active_status => true)
     if defined? current_user.swarms 
       @userswarms = current_user.swarms
     end
     @current_user = current_user
     @hash = Gmaps4rails.build_markers(@swarms) do |swarm, marker|
-      marker.lat swarm.latitude
-      marker.lng swarm.longitude
-      marker.picture "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png"
-      marker.infowindow swarm.description
+        marker.lat swarm.latitude
+        marker.lng swarm.longitude
+        marker.picture "https://addons.cdn.mozilla.net/img/uploads/addon_icons/13/13028-64.png"
+        marker.infowindow swarm.description
     end
   end
 
