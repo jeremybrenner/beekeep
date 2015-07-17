@@ -1,6 +1,6 @@
 # beeKeep
-
-<p>Bees and humans have a complex symbiotic relationship. Since early recorded history, humans have helped bees thrive in harsh environments and climates, while bees provide a wealth of products and services that we are deeply rooted in. Despite this, little has been done to curb the alarmingly rapid extinction of the bee population. If bees go extinct, not only do we loose the food, medical, and utility products they provide us, but our agricuture system as we know it would be crippled. The focus of beeKeep is to create a fast, realtime interface to help solve this problem.</p>
+### the bees are in trouble, and they need our help.
+<p>Bees and humans have a complex symbiotic relationship. Since early recorded history, humans have helped bees thrive in harsh environments and climates, while bees provide a wealth of products and services that we are deeply rooted in. Despite this, little has been done to curb the alarmingly rapid extinction of the bee population. If bees go extinct, not only do we loose the food, medical, and utility products they provide us, but our agricuture system as we know it would be crippled. The focus of beeKeep is to create a fast, realtime interface to help solve this problem. Extending that - I hope to make this a strong educational platform for creating awareness around a very important issue.</p>
 
 ## Technologies Used:
 
@@ -14,7 +14,18 @@
 * SASS
 * PostgreSQL
 
+## Preview Screenshots:
 
+### Swarm Report:
+![Report Form](https://cloud.githubusercontent.com/assets/11710882/8757862/f4a82bfa-2c92-11e5-8681-4ed8b96b019b.png)
+### Login Form:
+![Login Form](https://cloud.githubusercontent.com/assets/11710882/8757863/f653ad3a-2c92-11e5-8e76-82ea3557d9e7.png)
+### Dashboard Header:
+![Dashboard](https://cloud.githubusercontent.com/assets/11710882/8757869/fa027cf4-2c92-11e5-839f-20ed83bf6cd2.png)
+### Tracking Map
+![Tracking Map](https://cloud.githubusercontent.com/assets/11710882/8757868/f929fe74-2c92-11e5-834f-ef106fcabe51.png)
+### Responsive Dashboard View:
+![Mobile Response](https://cloud.githubusercontent.com/assets/11710882/8757864/f742fe62-2c92-11e5-9750-85a8548d9e0e.png)
 
 ## Current Features:
 * Allows any user to report a swarm they find, based on location, description, and optional contact information ( for home-based swarms and removal )
@@ -35,3 +46,6 @@
 * Comprehensive data analytics for personal reference, but also as a API service for researchers/developers
 * Customizeable profile options such as an avatar
 * Open chat for beekepers
+
+## Mockups:
+![beeKeep Mockups](https://cloud.githubusercontent.com/assets/11710882/8757890/1df96262-2c93-11e5-8516-46ed12fec6ce.png)
