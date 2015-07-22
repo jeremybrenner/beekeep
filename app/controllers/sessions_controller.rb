@@ -1,5 +1,6 @@
 class SessionsController < ApplicationController
 
+  # rescue from invalid login with a flash error message
   rescue_from ActiveRecord::RecordNotFound, with: :login_error
 
   def new

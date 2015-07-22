@@ -15,9 +15,11 @@ class Swarm < ActiveRecord::Base
   validates :address, 
             :presence => true
 
+ # try to geocode before validation to allow an indirect check against geocoder API
  before_validation :geocode
  after_validation :coord_set?
 
+ # this method does the actual check against the object to look for changed coordinates
   def coord_set?
     if (self.address_changed?)
       if !(self.latitude_changed?)
@@ -31,7 +33,7 @@ class Swarm < ActiveRecord::Base
   end
   
 
-
+  # contructs and sends SMS notifications upon swarm submission
   def self.send_swarm_notice(params)
 
 
@@ -55,6 +57,7 @@ class Swarm < ActiveRecord::Base
         @twilio_client.messages.create(
               :from => twilio_phone_number,
               :to => number_to_send_to,
+              # sends an sms with the swarm location, and a notice to login
               :body => "A swarm has been reported at the following location: #{params.values.last} - Login to your dashboard to claim it!"
           )
     end
