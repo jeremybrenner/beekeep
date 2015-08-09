@@ -38,6 +38,14 @@ class UsersController < ApplicationController
     end
   end
 
+  def profile
+    if current_user
+      @user = User.find(params[:id])
+    else
+      redirect_to '/login'
+    end
+  end
+
   private
 
     def user_params

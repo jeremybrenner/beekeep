@@ -7,6 +7,7 @@ root to: 'sites#landing'
 get '/signup', to: 'users#new'
 post '/signup', to: 'users#create'
 get '/dashboard', to: 'users#dashboard'
+get '/profile', to: 'users#edit'
 
 # routes for sessions
 get '/login', to: 'sessions#new'
